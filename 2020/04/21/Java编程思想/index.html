@@ -20,31 +20,33 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="越努力，越幸运！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SongLeong">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="第一章：对象导论1、什么是对象？  对象具有状态、行为和标识。这意味着每个对象都可以拥有内部数据（它们给出了该对象的状态）和方法（它们产生的行为），并且每个对象都可以唯一地与其他对象区分开来，具体来说，就是给个对象在内部中都有一个唯一的地址。 每个对象都属于定于了特性和行为的某个特定的类。 类描述了具有相同特性（数据元素）和行为（功能）的对象集合，所以一个类实际上就是一个数据类型。  2、对象的意">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java编程思想">
+<meta property="og:url" content="http://yoursite.com/2020/04/21/Java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/index.html">
 <meta property="og:site_name" content="SongLeong">
-<meta property="og:description" content="越努力，越幸运！">
+<meta property="og:description" content="第一章：对象导论1、什么是对象？  对象具有状态、行为和标识。这意味着每个对象都可以拥有内部数据（它们给出了该对象的状态）和方法（它们产生的行为），并且每个对象都可以唯一地与其他对象区分开来，具体来说，就是给个对象在内部中都有一个唯一的地址。 每个对象都属于定于了特性和行为的某个特定的类。 类描述了具有相同特性（数据元素）和行为（功能）的对象集合，所以一个类实际上就是一个数据类型。  2、对象的意">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-21T03:59:23.000Z">
+<meta property="article:modified_time" content="2020-04-21T16:15:04.188Z">
 <meta property="article:author" content="Song Leong">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/04/21/Java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>SongLeong</title>
+  <title>Java编程思想 | SongLeong</title>
   
 
 
@@ -158,9 +160,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -176,10 +179,9 @@
       <meta itemprop="name" content="SongLeong">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/21/Java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/" class="post-title-link" itemprop="url">Java编程思想</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Java编程思想
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -219,6 +221,13 @@
               <span class="post-meta-item-text">阅读次数：</span>
               <span class="leancloud-visitors-count"></span>
             </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
   <span class="post-meta-item">
     
@@ -243,7 +252,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="第一章：对象导论"><a href="#第一章：对象导论" class="headerlink" title="第一章：对象导论"></a>第一章：对象导论</h4><p>1、什么是对象？</p>
+        <h4 id="第一章：对象导论"><a href="#第一章：对象导论" class="headerlink" title="第一章：对象导论"></a>第一章：对象导论</h4><p>1、什么是对象？</p>
 <ul>
 <li>对象具有状态、行为和标识。这意味着每个对象都可以拥有内部数据（它们给出了该对象的状态）和方法（它们产生的行为），并且每个对象都可以唯一地与其他对象区分开来，具体来说，就是给个对象在内部中都有一个唯一的地址。</li>
 <li>每个对象都属于定于了特性和行为的某个特定的类。</li>
@@ -290,128 +299,142 @@
 <td>√</td>
 </tr>
 </tbody></table>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/21/Java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<a id="more"></a>
+
+<p>4、关系</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>has-a</td>
+<td>有一个，代表从属关系，例：A has-a（B就是A的组成部分）</td>
+</tr>
+<tr>
+<td>is-a</td>
+<td>是一个，代表继承关系，例：A is-a B（B就是A的父类）</td>
+</tr>
+<tr>
+<td>is-like-a</td>
+<td>像一个，代表组合关系，例：A like-a B（B就是A的接口）</td>
+</tr>
+</tbody></table>
+<h4 id="第二章：一切都是对象"><a href="#第二章：一切都是对象" class="headerlink" title="第二章：一切都是对象"></a>第二章：一切都是对象</h4><p>​    万物皆为对象，（谁说程序员没对象的，如果没有，就new一个对象 &lt;(￣︶￣)↗[GO!]）</p>
+<p><strong>基本数据类型：</strong></p>
+<table>
+<thead>
+<tr>
+<th>基本数据类型</th>
+<th>大小（bits）</th>
+<th>最小值</th>
+<th>最大值</th>
+<th>包装器类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>8</td>
+<td>-128</td>
+<td>+127</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>char</td>
+<td>16</td>
+<td>Unicode 0</td>
+<td>Unicode 2^16 - 1</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>short</td>
+<td>16</td>
+<td>-2^15</td>
+<td>+2^15 - 1</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>float</td>
+<td>32</td>
+<td>IEEE754</td>
+<td>IEEE754</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>int</td>
+<td>32</td>
+<td>-2^31</td>
+<td>+2^31 - 1</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>64</td>
+<td>-2^63</td>
+<td>+2^63 - 1</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>double</td>
+<td>64</td>
+<td>IEEE754</td>
+<td>IEEE754</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Boolean</td>
+</tr>
+</tbody></table>
+<p><strong>作用域</strong>：</p>
+<p>​    作用域决定了在其内定义的变量名的可见性和生命周期。</p>
+<p>​    作用域由花括号的位置决定，定义的变量只可用于作用域结束之前。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> s = <span class="number">21</span>;</span><br><span class="line">    <span class="comment">// 仅 s 可用</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">34</span>;</span><br><span class="line">        <span class="comment">// s、x都可用</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 仅 s 可用；</span></span><br><span class="line">    <span class="comment">// x超出了作用域，不可用</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    Java对象不具备和基本数据类型一样的生命周期。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    A a = <span class="keyword">new</span> A();</span><br><span class="line">&#125; <span class="comment">// end of scope</span></span><br><span class="line"><span class="comment">// 引用a在作用域终点就消失了，然而，a指向的String对象还继续占据内存空间。在作用域无法访问这个对象，因为它唯一的引用超出了作用域的范围。</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="第三章：操作符"><a href="#第三章：操作符" class="headerlink" title="第三章：操作符"></a>第三章：操作符</h4><p>算术操作符：</p>
+<h4 id="第四章：控制执行流程"><a href="#第四章：控制执行流程" class="headerlink" title="第四章：控制执行流程"></a>第四章：控制执行流程</h4><h4 id="第五章：初始化与清理"><a href="#第五章：初始化与清理" class="headerlink" title="第五章：初始化与清理"></a>第五章：初始化与清理</h4><h4 id="第六章：访问权限控制"><a href="#第六章：访问权限控制" class="headerlink" title="第六章：访问权限控制"></a>第六章：访问权限控制</h4><h4 id="第七章：复用类"><a href="#第七章：复用类" class="headerlink" title="第七章：复用类"></a>第七章：复用类</h4><h4 id="第八章：多态"><a href="#第八章：多态" class="headerlink" title="第八章：多态"></a>第八章：多态</h4><h4 id="第九章：接口"><a href="#第九章：接口" class="headerlink" title="第九章：接口"></a>第九章：接口</h4><h4 id="第十章：内部类"><a href="#第十章：内部类" class="headerlink" title="第十章：内部类"></a>第十章：内部类</h4><h4 id="第十一章：持有对象"><a href="#第十一章：持有对象" class="headerlink" title="第十一章：持有对象"></a>第十一章：持有对象</h4><h4 id="第十二章：通过异常处理错误"><a href="#第十二章：通过异常处理错误" class="headerlink" title="第十二章：通过异常处理错误"></a>第十二章：通过异常处理错误</h4><h4 id="第十三章：字符串"><a href="#第十三章：字符串" class="headerlink" title="第十三章：字符串"></a>第十三章：字符串</h4><h4 id="第十四章：类型信息"><a href="#第十四章：类型信息" class="headerlink" title="第十四章：类型信息"></a>第十四章：类型信息</h4><h4 id="第十五章：泛型"><a href="#第十五章：泛型" class="headerlink" title="第十五章：泛型"></a>第十五章：泛型</h4><h4 id="第十六章：数组"><a href="#第十六章：数组" class="headerlink" title="第十六章：数组"></a>第十六章：数组</h4><h4 id="持续更新中。。。"><a href="#持续更新中。。。" class="headerlink" title="持续更新中。。。"></a>持续更新中。。。</h4>
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"># Java</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Song Leong">
-      <meta itemprop="description" content="越努力，越幸运！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SongLeong">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">Hexo+GitHub搭建个人博客</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-18 12:02:30" itemprop="dateCreated datePublished" datetime="2020-04-18T12:02:30+08:00">2020-04-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-21 15:22:30" itemprop="dateModified" datetime="2020-04-21T15:22:30+08:00">2020-04-21</time>
-              </span>
-
-          
-            <span id="/2020/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo+GitHub搭建个人博客" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>​    Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章（经常玩CSDN上的人都知道），在几秒内，即可利用靓丽的主题生成静态网页。通过Hexo我们可以快速创建自己的博客，仅需要几条命令就可以完成。发布时，Hexo可以部署在自己的Node服务器上面，也可以部署github上面。对于个人用户来说，部署在github上好处颇多，不仅可以省去服务器的成本，还可以减少各种系统运维的麻烦事(系统管理、备份、网络)。所以，在这里我是基于github搭建的个人博客站点。重点是：<strong>免费 ~ ~</strong></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="Hexo+GitHub搭建个人博客">
+      <i class="fa fa-chevron-left"></i> Hexo+GitHub搭建个人博客
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -458,6 +481,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一章：对象导论"><span class="nav-number">1.</span> <span class="nav-text">第一章：对象导论</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二章：一切都是对象"><span class="nav-number">2.</span> <span class="nav-text">第二章：一切都是对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三章：操作符"><span class="nav-number">3.</span> <span class="nav-text">第三章：操作符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第四章：控制执行流程"><span class="nav-number">4.</span> <span class="nav-text">第四章：控制执行流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第五章：初始化与清理"><span class="nav-number">5.</span> <span class="nav-text">第五章：初始化与清理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第六章：访问权限控制"><span class="nav-number">6.</span> <span class="nav-text">第六章：访问权限控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第七章：复用类"><span class="nav-number">7.</span> <span class="nav-text">第七章：复用类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第八章：多态"><span class="nav-number">8.</span> <span class="nav-text">第八章：多态</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第九章：接口"><span class="nav-number">9.</span> <span class="nav-text">第九章：接口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十章：内部类"><span class="nav-number">10.</span> <span class="nav-text">第十章：内部类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十一章：持有对象"><span class="nav-number">11.</span> <span class="nav-text">第十一章：持有对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十二章：通过异常处理错误"><span class="nav-number">12.</span> <span class="nav-text">第十二章：通过异常处理错误</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十三章：字符串"><span class="nav-number">13.</span> <span class="nav-text">第十三章：字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十四章：类型信息"><span class="nav-number">14.</span> <span class="nav-text">第十四章：类型信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十五章：泛型"><span class="nav-number">15.</span> <span class="nav-text">第十五章：泛型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十六章：数组"><span class="nav-number">16.</span> <span class="nav-text">第十六章：数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#持续更新中。。。"><span class="nav-number">17.</span> <span class="nav-text">持续更新中。。。</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
